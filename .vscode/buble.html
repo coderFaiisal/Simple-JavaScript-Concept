@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>My List</h1>
+        <ul id="mylist">
+            <li id="first" class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Tempore, libero a?</li>
+            <li class="item" onclick="alert('hey')">Accusantium, quasi reiciendis.</li>
+            <li class="item">Incidunt, asperiores architecto!</li>
+            <li class="item">Veniam, ipsam doloribus.</li>
+        </ul>
+    </div>
+    <script>
+            //clicked on both, container as well as first item.
+        document.getElementById('first').addEventListener('click', function(event){
+            console.log("First item clicked");
+        })
+        document.getElementById('container').addEventListener('click', function(event){
+            console.log("Container clicked");
+        })
+    </script>
+</body>
+</html>
